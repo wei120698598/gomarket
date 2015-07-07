@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 侧滑菜单 -->
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 内容区 -->
+
+        <LinearLayout
+            android:id="@+id/maincontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff33bb44"
+            android:orientation="vertical" >
+
+            <com.aaa.gomarket.view.PagerTab
+                android:id="@+id/pagertab"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="#ffcccccc">
+            </com.aaa.gomarket.view.PagerTab>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ff33bb44"
+                android:orientation="vertical" >
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+        <!-- 菜单 -->
+
+        <FrameLayout
+            android:layout_width="150dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#ffff3344" >
+        </FrameLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
